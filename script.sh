@@ -46,7 +46,7 @@ sudo adduser --system --quiet --shell=/bin/bash --home=$ODOO_HOME --gecos 'ODOO'
 sudo mkdir /var/log/$ODOO_USER
 sudo chown $ODOO_USER:$ODOO_USER /var/log/$ODOO_USER
 cd $ODOO_HOME
-sudo wget https://www.odoo.com/es_ES/thanks/download_first?platform=deb&version=90&l=2144701-9b14388e6a14444710451a416ef72021
+sudo wget http://nightly.odoo.com/9.0/nightly/src/odoo_9.0.20151111.tar.gz
 tar_odoo=$(ls)
 sudo su $ODOO_USER -c "tar xvf $tar_odoo"
 for v in $(ls); do
